@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family:'Roboto', sans-serif; 
+}
+a{
+    text-decoration:none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+#menu li a{
+    /* color: #fff; */
+    text-decoration: none;
+    font-size: 20px;
+    /* color: #000000; */
+    display: inline-block;
+	/* padding: 10px 30px; */
+	color: #3D0000;
+	background-color: transparent;
+	/* border: 2px solid crimson; */
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	/* letter-spacing: 0.1rem; */
+	/* margin-top: 30px; */
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+#menu li a:hover {
+	color: white;
+	background-color: crimson;
+}
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#home{
+   background-color: #DADDFC;
+}
+
+#about{
+     background-color: #DAD0C2;
+}
+
+#projects{
+     background-color: #D3E4CD;
+}
+
+#skills{
+     background-color: #F0E9D2;
+}
+
+#contact{
+     background-color: #D3E4CD;
+}
+#education{
+    background-color: darkgrey;
+    /* background: linear-gradient(90deg, #FFC0CB 50%, darkgrey 50%); */
+    }
+#experience{
+        background-color:#DDFFBC;
+        /* background: linear-gradient(90deg, #FFC0CB 50%, darkgrey 50%); */
+}
+#home h1{
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: #383E56;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+
+h1{
+	display: block;
+	/* width: fit-content; */
+	font-size: 3rem;
+	position: relative;
+	color:#4C0070;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+
+#about h2{
+  display: block;
+	/* width: fit-content; */
+	font-size: 2.1rem;
+	position: relative;
+	color:#181D31;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+ h2{
+  display: block;
+	/* width: fit-content; */
+	font-size: 2.1rem;
+	position: relative;
+	color:hsl(240, 95%, 22%);
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+
+/* .container a {
+    color: #383E56;
+} */
+.home_button {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #383E56;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+.home_button:hover {
+	color: white;
+	background-color: crimson;
+}
+
+/* section 2 */
+.section-2{
+    padding-top: 25vh;
+    width: 80%;
+}
+
+.section-2 h2,p{
+    display: block;
+	width: fit-content;
+	font-size: 1.5rem;
+	position: relative;
+	color: black;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+    font-size: 22px;
+    font-family:'Roboto', sans-serif; 
+}
+
+/* section 3 */
+.section-3 {
+    padding-top: 20vh;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+
+}
+
+.section-3 h2{
+	color: black;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+/* Bootstrap css */
+section.resume-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    /* max-width: 75rem; */
+   
+  }
+ 
+  section.resume-section .resume-section-content {
+    min-height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    /* position: fixed; */
+    top: 50%;
+    left: 50%;
+    margin-top: 175px;
+    margin-left: 75px;
+  }
+  
+  @media (min-width: 768px) {
+    section.resume-section {
+      min-height: 100vh;
+    }
+  }
+  @media (min-width: 992px) {
+    section.resume-section {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    section.resume-section1 {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+  section.resume-section1 .mb-5 {
+    min-height: 100vh;
+    /* width: 10%; */
+    /* display: flex; */
+     /* position: fixed;  */
+    top: 5%;
+    left: 5%;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  
+
+  .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+
+  .d-flex {
+    display: flex !important;
+  }
+
+  .flex-column {
+    flex-direction: column !important;
+  }
+
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+
+  .justify-content-between {
+    justify-content: space-between !important;
+  }
+
+  .flex-grow-1 {
+    flex-grow: 1 !important;
+  }
+
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .subheading {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+
+  .flex-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+
+  .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  }
+  
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .dev-icons {
+    font-size: 5rem;
+   padding-left: 3em;
+  }
+
+  #workflow{
+    font-size: 2rem;
+  }
+
+  .row {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+
+
+  /* .s12 {
+    max-height: 60px;
+  } */
+  /* new code */
+.card-title{
+  color:hsl(240, 95%, 22%);
+}
+
+.Title{
+  color:#142F43;
+}
+
+  .card {
+    /* margin-bottom: 60px; */
+    background-color: #D3E4CD;
+  }
+  .card.medium .card-image {
+    height: 120px;
+  }
+  .icon-btn {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 70px;
+    border-radius: 45px;
+    display: inline-block;
+    margin: 4px;
+  }
+  
+  .github {
+    color: black;
+  }
+  
+  .linkedin {
+    color: #0077b5;
+  }
+  
+  .angellist {
+    color: grey;
+  }
+  
+  .icon-btn:hover {
+    transform: scale(1.10);
+    color: #FFFFFF;
+  }
+  
+  .linkedin:hover {
+    background-color: #0077b5;
+  }
+  
+  .angellist:hover {
+    background-color: grey;
+  }
+  
+  .github:hover {
+    background-color: black;
+  }
+  
+  /* Buttons - Read Me, Contact Us */
+  
+  .readme {
+    position: relative;
+    padding: 11px 35px;
+    background: #fff;
+    color: #00796b;
+    border: 2px solid #fff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+  /* .readme:hover{
+    color: white;
+    background-color: #00796b;
+  } */
+  
+  .contactme {
+    position: relative;
+    padding: 11px 35px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+  .contactme:hover{
+    color: #00796b;
+    background-color: white;
+  }
+  /* main body */
+  
+  /* body-color */
+  
+  body {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  /* body {
+    color: black;
+    font-size: 18px;
+  } */
+  
+  /* main a -- links */
+  
+  /* a {
+    color: #009688;
+  } */
+  
+  a {
+    color: #004d40;
+  }
+  
+  /* main blockqoute */
+  
+  /* blockquote {
+    border-left: 5px solid #795548;
+    color: #795548;
+    font-size: 125%;
+    font-weight: 400;
+    margin: 20px 0;
+    padding-left: 1.5rem;
+  } */
+  
+  blockquote {
+    border-left: 5px solid #795548;
+    color: #795548;
+    font-size: 125%;
+    font-weight: 400;
+    margin: 20px 0;
+    padding-left: 1.5rem;
+  }
+  
+  blockquote * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* main nav */
+  
+  nav {
+    background: white;
+    box-shadow: none;
+    height: 0;
+  }
+  
+  /* nav {
+    background: rgb(149, 126, 212);
+    box-shadow: none;
+    height: 0;
+  } */
+  
+  
+  .brand-logo h1 {
+    font-size: inherit;
+    line-height: inherit;
+    margin: inherit;
+    font-weight: inherit;
+  }
+/*   
+  .container {
+    width: 95%;
+  } */
+  
+  /* h3 {
+    font-weight: 200;
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding: 30px 40px;
+    text-transform: uppercase;
+  } */
+  
+  .section {
+    padding-bottom: 30px;
+    padding-top: 0;
+    position: relative;
+  }
+  
+  .full-height {
+    height: 100vh;
+  }
+  
+  /* Original */
+  
+  /* #intro.section {
+    background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
+    position: relative;
+  } */
+  
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .waves-effect.waves-blue .waves-ripple {
+    /* The alpha value allows the text and background color
+     of the button to still show through. */
+    background-color: rgba(33, 150, 243, 0.2);
+  }
+  
+  .card {
+    margin-bottom: 60px;
+  }
+  
+  .card .role {
+    font-size: 1.25rem;
+    position: absolute;
+    right: 38px;
+    top: 35px;
+  }
+  
+  .card li a {
+    margin-right: 0;
+    color: #333;
+    border-bottom: 2px solid #ffab40;
+  }
+  
+  .card li a:hover {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .card .card-content {
+    padding-bottom: 30px;
+  }
+  
+  .card .card-content p {
+    padding: 5px 0 0;
+  }
+  
+  .card h5 {
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card-action span {
+    font-size: 85%;
+    color: #666;
+  }
+  .card-action a.btn-floating {
+    margin-bottom: 0;
+  }
+  .waves-effect.waves-blue .waves-ripple {
+    /* The alpha value allows the text and background color
+     of the button to still show through. */
+    background-color: rgba(33, 150, 243, 0.2);
+  }
